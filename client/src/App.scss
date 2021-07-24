@@ -1,0 +1,128 @@
+@import './partials/_media-queries.scss';
+
+.App{
+
+    a{
+        text-decoration: none;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: none !important;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+}
+
+.add-new{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.add-phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.catalogue{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @media #{$lg-up} {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1200px;
+    }
+
+    .phone{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+
+        @media #{$lg-up} {
+            width: 25%;
+        }
+    } 
+
+    .phone{
+        margin-bottom: 40px;
+       
+        img{
+            max-width: 300px;
+            
+            @media #{$lg-up} {
+                max-width: 200px;
+                max-height: 150px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        p{
+            margin: 0;
+        }
+
+        .colour{
+            text-transform: capitalize;
+            margin-bottom: 10px;
+        }
+
+        .bin{
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+            padding-right: 80px;
+        }
+    }
+}
+
+.back{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.phone-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    @media #{$lg-up} {
+        flex-direction: row;
+        max-width: 900px;
+    }
+
+    .phone-img{
+        max-width: 300px;
+
+        @media #{$lg-up} {
+            max-width: 500px;
+        }
+
+        img{
+            max-width: 300px;
+
+            @media #{$lg-up} {
+                max-width: 500px;
+            }
+        }
+    }
+
+    .phone-info{
+        padding: 0px 50px;
+    }
+}
